@@ -1,0 +1,22 @@
+<div class="overlay" [class.open]="opened">
+  <div class="modal" [class.round]="isRounded">
+    <div class="inner">
+
+      <div class="top">
+        <h3>{{heading}}</h3>
+      </div>
+
+      <div class="middle">
+        <p>
+          {{message}}
+        </p>
+      </div>
+
+      <div class="bottom">
+        <button class="confirm" (click)="hasConfirmed()">{{confirmTxt}}</button>
+        <button class="cancel" (click)="closeDialog()">{{cancelTxt}}</button>
+      </div>
+
+    </div>
+  </div>
+</div>
